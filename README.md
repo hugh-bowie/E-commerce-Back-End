@@ -2,4 +2,4 @@
 
 ## Object-Relational Mapping (ORM)
 
-### Using MySQL2, Sequelize, express, dotenv
+### Using MySQL2, Sequelize, Express, Dotenv
