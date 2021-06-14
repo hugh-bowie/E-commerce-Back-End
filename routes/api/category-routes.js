@@ -11,12 +11,12 @@ router.get('/', (req, res) => {
       model: Product,
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
-  }).then(dbCatData => {
-    if (!dbCatData) {
+  }).then(dbCategoryData => {
+    if (!dbCategoryData) {
       res.status(404).json({ message: 'Not found in our system.' });
       return;
     }
-    res.json(dbCatData);
+    res.json(dbCategoryData);
   })
     .catch(err => {
       console.log(err);
@@ -36,12 +36,12 @@ router.get('/:id', (req, res) => {
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
   })
-    .then(dbCatData => {
-      if (!dbCatData) {
+    .then(dbCategoryData => {
+      if (!dbCategoryData) {
         res.status(404).json({ message: 'Not found in our system.' });
         return;
       }
-      res.json(dbCatData);
+      res.json(dbCategoryData);
     })
     .catch(err => {
       console.log(err);
@@ -55,7 +55,7 @@ router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name
   })
-    .then(dbCatData => res.json(dbCatData))
+    .then(dbCategoryData => res.json(dbCategoryData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -70,12 +70,12 @@ router.put('/:id', (req, res) => {
       id: req.params.id
     }
   })
-    .then(dbCatData => {
-      if (!dbCatData) {
+    .then(dbCategoryData => {
+      if (!dbCategoryData) {
         res.status(404).json({ message: 'Not found in our system.' });
         return;
       }
-      res.json(dbCatData);
+      res.json(dbCategoryData);
     })
     .catch(err => {
       console.log(err);
@@ -91,12 +91,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-    .then(dbCatData => {
-      if (!dbCatData) {
+    .then(dbCategoryData => {
+      if (!dbCategoryData) {
         res.status(404).json({ message: 'Not found in our system.' });
         return;
       }
-      res.json(dbCatData);
+      res.json(dbCategoryData);
     })
     .catch(err => {
       console.log(err);
@@ -104,4 +104,6 @@ router.delete('/:id', (req, res) => {
     });
 });
 
+
 module.exports = router;
+
