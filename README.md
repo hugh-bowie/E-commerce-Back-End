@@ -9,3 +9,7 @@
     <img src="https://img.shields.io/github/issues/hugh-bowie/E-commerce-Back-End" />
     <img src="https://img.shields.io/github/last-commit/hugh-bowie/E-commerce-Back-End" >
  </p>
+
+Animation showing the functionality of the application:
+
+![start-seed-db](./assets/create-Seed-Db.gif)
