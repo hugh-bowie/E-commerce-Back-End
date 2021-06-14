@@ -14,4 +14,14 @@ Animation showing the functionality of the application:
 
 ![start-seed-db](./assets/create-Seed-Db.gif)
 
+### CRUD Categories
+
 ![Crud-Categories](./assets/Categories.gif)
+
+### CRUD Products
+
+![Crud-Products](./assets/Products.gif)
+
+### CRUD Tags
+
+![Crud-Tags](./assets/Tags.gif)
