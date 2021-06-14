@@ -13,3 +13,5 @@
 Animation showing the functionality of the application:
 
 ![start-seed-db](./assets/create-Seed-Db.gif)
+
+![Crud-Categories](./assets/Categories.gif)
